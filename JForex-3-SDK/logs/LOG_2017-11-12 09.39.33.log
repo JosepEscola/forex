@@ -1,0 +1,219 @@
+2017-11-12 09:39:33.419 INFO  singlejartest.Main - Connecting...
+2017-11-12 09:39:34.057 INFO  com.dukascopy.api.impl.connect.AuthorizationClient - environment(jnlp.client.mode)=null, platformInstanceId=null
+2017-11-12 09:39:34.067 INFO  com.dukascopy.api.impl.connect.AuthorizationClient - Auth step 1 request [3ACF84125D794763FAF6B1E049EAB23E0338CCFC]
+2017-11-12 09:39:34.069 DEBUG com.dukascopy.api.impl.connect.AuthorizationClient - >> [https://login.dukascopy.com/authorization-1/demo/auth?munus=srp_api&passus=1&sermo=46f1cc0e-50ac-44b8-b6b4-fa4f3377c6b2&putent_genus=0&appello=3ACF84125D794763FAF6B1E049EAB23E0338CCFC&srp_versio=1]
+2017-11-12 09:39:35.415 DEBUG com.dukascopy.api.impl.connect.AuthorizationClient - << [{"B":"58ac32db5ce38faac7d03755dc619f3064cf24dd388c84dd437aeee4f6b814fda6e92d32963d893443dcad103513bfd61565823a2f908c8e14730e294b6c2e4b914ac4b511bec16bfe8b0212ea2ad68fe4f350306410a6a90bfbeed000af25a3d64c1d55d34392e9a7576003131059cb30b630b93981e37cbdd321b6fadadd41d1ab485d514890d0da1ad158db68fa806ca2d8264e0e6af188ecb7ce1019068a6975e2ca5c7bd7dd56b6f5804b2001a4c5a68633330ce7365ef06df0cdd6e3caab5761df4677f0fa88a6a716b4ca1b1bc68decd008f4331df39e4e7320bbfe8c808b940efb39d5f1c2d1906c0a0199ae07e2028d2277f28852e2d03440fc0cc6","S":"68c8d5956152a564789d99576d65899d","G":"2","H":"SHA-256","K":"5b9e8ef059c6b32ea59fc1d322d37f04aa30bae5aa9003b8321e21ddb04e300","N":"ac6bdb41324a9a9bf166de5e1389582faf72b6651987ee07fc3192943db56050a37329cbb4a099ed8193e0757767a13dd52312ab4b03310dcd7f48a9da04fd50e8083969edb767b0cf6095179a163ab3661a05fbd5faaae82918a9962f0b93b855f97993ec975eeaa80d740adbf4ff747359d041d5c33ea71d281e446b14773bca97b43a23fb801676bd207a436c6481f1d2b9078717461a5b9d32e688f87748544523b524b0d57d5ea77a2775d2ecfa032cfbdbf52fb3786160279004e57ae6af874e7303ce53299ccc041c7bc308d82a5698f3a8d0c38271ae35f8e9dbfbb694b5c803d89f7ae435de236d525f54759b65e372fcd68ef20fa7111f9e4aff73","srp_versio":"1"}]
+2017-11-12 09:39:35.416 INFO  com.dukascopy.api.impl.connect.AuthorizationClient - Auth step 1 response [ServerResponseObject [passwordServerResponse=Step1ServerResponse [serverPublicValueB=58ac32db5ce38faac7d03755dc619f3064cf24dd388c84dd437aeee4f6b814fda6e92d32963d893443dcad103513bfd61565823a2f908c8e14730e294b6c2e4b914ac4b511bec16bfe8b0212ea2ad68fe4f350306410a6a90bfbeed000af25a3d64c1d55d34392e9a7576003131059cb30b630b93981e37cbdd321b6fadadd41d1ab485d514890d0da1ad158db68fa806ca2d8264e0e6af188ecb7ce1019068a6975e2ca5c7bd7dd56b6f5804b2001a4c5a68633330ce7365ef06df0cdd6e3caab5761df4677f0fa88a6a716b4ca1b1bc68decd008f4331df39e4e7320bbfe8c808b940efb39d5f1c2d1906c0a0199ae07e2028d2277f28852e2d03440fc0cc6, saltS=68c8d5956152a564789d99576d65899d, safePrimeN=ac6bdb41324a9a9bf166de5e1389582faf72b6651987ee07fc3192943db56050a37329cbb4a099ed8193e0757767a13dd52312ab4b03310dcd7f48a9da04fd50e8083969edb767b0cf6095179a163ab3661a05fbd5faaae82918a9962f0b93b855f97993ec975eeaa80d740adbf4ff747359d041d5c33ea71d281e446b14773bca97b43a23fb801676bd207a436c6481f1d2b9078717461a5b9d32e688f87748544523b524b0d57d5ea77a2775d2ecfa032cfbdbf52fb3786160279004e57ae6af874e7303ce53299ccc041c7bc308d82a5698f3a8d0c38271ae35f8e9dbfbb694b5c803d89f7ae435de236d525f54759b65e372fcd68ef20fa7111f9e4aff73, correspondingGeneratorG=2, hashAlgorithmH=SHA-256, srpProtocolVersion=1], ]]
+2017-11-12 09:39:35.470 INFO  com.dukascopy.api.impl.connect.AuthorizationClient - Auth step 2 request A [13260308127841111673462856569744135903247463832752220195135033992412539128067006742602567377737055682811636765854768031006620124254617783149497416648374056243236107034312016618519987103522550470058390882712393435330706558302047921991902475483179518936029772378193636229017285147674184322460273242693601210620510565853820695412055259081943367890383719752631592746634776129163436932473752134391387534438969744796625969806592248191282269734784197729370423890252038318203371510620722070193721398318299761578910517993739070723015364960876053935426728053769469535445164548125572704633566446362987266044746397829795557165619], M1 [108718491122685536107215846734454258832141102387706325176554546073957920867206]
+2017-11-12 09:39:35.471 DEBUG com.dukascopy.api.impl.connect.AuthorizationClient - >> [https://login.dukascopy.com/authorization-1/demo/auth?munus=srp_api&testimonium_nuntius=f05c7c3fa83eebf35843966ad43f700aa94924caacb09967e2ade8c05c5f0386&passus=2&publicus_pendo=690ab8419fcf75178ba0c4b5d446ae996d3386affa91d051b75e27972c1066d356216729bd3e1f01c34f873d699bb4b1871c033521195474ebc8ca659267d48c3c02f1c63f089ec30ffb5db8f91578ec540a0f1c6552cd414bd4cde6e2d88bc00db64dd393b3d4ad42ecb055174e85367ddc2a143409e7ff166dd7efa5fe95ec484039f24f6b1f4d4a709a84236b7f439f59878a4a81a5deffc790050de5e64a6e65289a710465adcce3f5c6de6267f6b6f83f0c1881649a340072263952f787f958123060c850cfbbcbe67f1b32ced6c5f662bf0de0f142fec09b1fcbc4c6593a11a4e9a4543124ffe748ca9742ff231b255693cf95b21352aa17e5ac284a33&sermo=46f1cc0e-50ac-44b8-b6b4-fa4f3377c6b2&putent_genus=0&srp_versio=1]
+2017-11-12 09:39:36.631 DEBUG com.dukascopy.api.impl.connect.AuthorizationClient - << [{"M2":"ce8adc6aaa2f60876beec2a0f34fae946789edee06658c7d974a5bfef26e5c8e","srp_versio":"1"}]
+2017-11-12 09:39:36.632 INFO  com.dukascopy.api.impl.connect.AuthorizationClient - Auth step 2 response [ServerResponseObject [passwordServerResponse=Step2ServerResponse [serverEvidenceMessageM2=ce8adc6aaa2f60876beec2a0f34fae946789edee06658c7d974a5bfef26e5c8e, srpProtocolVersion=1], ]]
+2017-11-12 09:39:36.633 INFO  com.dukascopy.api.impl.connect.AuthorizationClient - Auth step 3 request
+2017-11-12 09:39:36.633 DEBUG com.dukascopy.api.impl.connect.AuthorizationClient - >> [https://login.dukascopy.com/authorization-1/demo/auth?munus=srp_api&passus=3&sermo=46f1cc0e-50ac-44b8-b6b4-fa4f3377c6b2&versio=318.4.33&willPing=true&putent_genus=0&occasus=true&platform=DDS3_JFOREX&srp_versio=1]
+2017-11-12 09:39:38.020 DEBUG com.dukascopy.api.impl.connect.AuthorizationClient - << [{"occasus":"rO0ABXNyABRqYXZhLnV0aWwuUHJvcGVydGllczkS0HpwNj6YAgABTAAIZGVmYXVsdHN0ABZMamF2\r\nYS91dGlsL1Byb3BlcnRpZX...","authApiURLs":["d-ja-gva-141-194.dukascopy.com:10443","d-ja-usa-e-96-4-a.dukascopy.com:10443","d-ja-sgn-04-b.dukascopy.com:10443","d-ja-jpn-04-a.dukascopy.com:10443","d-ja-hk-110-05.dukascopy.com:10443","d-ja-msk-10.dukascopy.com:10443"],"srp_versio":"1"}]
+2017-11-12 09:39:38.034 INFO  com.dukascopy.api.impl.connect.AuthorizationClient - Auth step 3 response [ServerResponseObject [passwordServerResponse=Step3ServerResponse [serverResponse={"occasus":"rO0ABXNyABRqYXZhLnV0aWwuUHJvcGVydGllczkS0HpwNj6YAgABTAAIZGVmYXVsdHN0ABZMamF2\r\nYS91dGlsL1Byb3BlcnRpZX...","authApiURLs":["d-ja-gva-141-194.dukascopy.com:10443","d-ja-usa-e-96-4-a.dukascopy.com:10443","d-ja-sgn-04-b.dukascopy.com:10443","d-ja-jpn-04-a.dukascopy.com:10443","d-ja-hk-110-05.dukascopy.com:10443","d-ja-msk-10.dukascopy.com:10443"],"srp_versio":"1"}], responseHeaderFields={Transfer-Encoding=[chunked], null=[HTTP/1.1 200], idle-session-ttl=[900000], CF-RAY=[3bc82e865acb545c-MAD], Server=[cloudflare-nginx], Connection=[keep-alive], Client-Country=[ES], Pragma=[no-cache], Last-Modified=[Sun, 12 Nov 2017 08:39:36 GMT], Date=[Sun, 12 Nov 2017 08:39:37 GMT], Cache-Control=[no-cache, must-revalidate, no-store, max-age=0], Access-Control-Allow-Credentials=[true], Client-IP=[81.37.216.145], Vary=[Accept-Encoding], Set-Cookie=[__cfduid=df72286b2b541ac160c13544751160dee1510475976; expires=Mon, 12-Nov-18 08:39:36 GMT; path=/; domain=.dukascopy.com; HttpOnly], Expires=[Thu, 01 Jan 1970 00:00:00 GMT], Content-Type=[text/plain;charset=UTF-8]}]]
+2017-11-12 09:39:38.161 WARN  com.dukascopy.api.instrument.AvailableInstrumentProvider - Instrument "NEM.US/USD" is absent in Instrument API enum.
+2017-11-12 09:39:38.162 INFO  com.dukascopy.api.impl.connect.AuthorizationClient - Selecting the best server...
+2017-11-12 09:39:40.367 INFO  com.dukascopy.api.impl.connect.AuthorizationClient - The ping start time=2017-11-12 09:39:40:367
+2017-11-12 09:39:40.689 INFO  com.dukascopy.api.impl.connect.AuthorizationClient - The ping end time=2017-11-12 09:39:40:689, the ping processing time=[322]ms
+2017-11-12 09:39:40.690 DEBUG com.dukascopy.api.impl.connect.AuthorizationClient - Best api url [d-ja-gva-141-194.dukascopy.com:10443] with time [54]
+2017-11-12 09:39:40.690 DEBUG com.dukascopy.api.impl.connect.TesterClientImpl - d-ja-gva-141-194.dukascopy.com:10443@11d0a4ccb28f4e9bca5d39a55a198ffaeaa9c3b992a51417942dff33bcb8e1d3
+2017-11-12 09:39:40.696 INFO  com.dukascopy.dds2.greed.util.FilePathManager - WL info is unavailable. Use default App folder for Platform data:  /Users/DKS/Library/Application Support/JForex
+2017-11-12 09:39:41.421 WARN  com.dukascopy.charts.data.datacache.FeedDataProvider - JStore is disabled for the current user
+2017-11-12 09:39:41.430 DEBUG com.dukascopy.api.impl.connect.TesterClientImpl - UserAgent: {"clientType":"DDS3_JFOREXSDK","javaVersion":"1.8.0_51","jvmVersion":"25.51-b03","ip":"null","clientVersion":"318.4.33","osName":"Mac OS X","userName":"null"}
+2017-11-12 09:39:42.625 INFO  com.dukascopy.dds2.greed.connection.GreedClientAuthorizationProvider - !!!:Thread[(NettyTransportClient-0) ClientConnector,5,main]
+2017-11-12 09:39:42.627 INFO  com.dukascopy.dds4.transport.client.netty.ClientConnector - Authorize task in queue, server address [d-ja-gva-141-194.dukascopy.com/194.8.15.194:10443], transport name [NettyTransportClient-0]
+2017-11-12 09:39:42.629 DEBUG com.dukascopy.api.impl.connect.TesterClientImpl - Authorized
+2017-11-12 09:39:42.633 INFO  com.dukascopy.api.instrument.subscribe.InstrumentManager - InstrumentManager created.
+2017-11-12 09:39:42.899 WARN  com.dukascopy.api.impl.connect.WLabelData - White Label Image is not received
+2017-11-12 09:39:42.899 INFO  singlejartest.Main - Connected
+2017-11-12 09:39:42.899 INFO  singlejartest.Main - Subscribing instruments...
+2017-11-12 09:39:42.899 INFO  singlejartest.Main - Downloading data
+2017-11-12 09:39:42.905 INFO  com.dukascopy.charts.data.datacache.metadata.FeedMetadataManager - Loading first times for [EUR/USD]...
+2017-11-12 09:39:42.969 INFO  com.dukascopy.charts.data.datacache.metadata.FeedMetadataManager - First times loaded {EUR/USD={Ticks=1052082000914, 1 Min=1052082000000, Hourly=1052082000000, Daily=99792000000}}
+2017-11-12 09:39:42.976 INFO  com.dukascopy.charts.data.datacache.metadata.FeedMetadataManager - Loading first times for [GBP/JPY]...
+2017-11-12 09:39:43.049 INFO  com.dukascopy.charts.data.datacache.metadata.FeedMetadataManager - First times loaded {GBP/JPY={Ticks=1059944400015, 1 Min=1059944400000, Hourly=1059944400000, Daily=662774400000}}
+2017-11-12 09:39:43.053 INFO  com.dukascopy.charts.data.datacache.metadata.FeedMetadataManager - Loading first times for [USD/JPY]...
+2017-11-12 09:39:43.115 INFO  com.dukascopy.charts.data.datacache.metadata.FeedMetadataManager - First times loaded {USD/JPY={Ticks=1052082000626, 1 Min=1052082000000, Hourly=1052082000000, Daily=508377600000}}
+2017-11-12 09:39:43.119 INFO  singlejartest.Main - from: 2017/04/01 00:00:00 to: 2017/04/29 23:00:00
+2017-11-12 09:39:43.119 INFO  singlejartest.Main - Starting strategy
+2017-11-12 09:39:43.156 INFO  singlejartest.Main - Strategy started: 0
+2017-11-12 09:39:43.157 INFO  singlejartest.Main - Getting prices before start time
+2017-11-12 09:39:43.450 INFO  singlejartest.Main - Creating data loading threads
+2017-11-12 09:39:43.579 INFO  singlejartest.Main - Getting prices before start time
+2017-11-12 09:39:43.621 WARN  com.dukascopy.api.impl.connect.WLabelData - White Label Image is not received
+2017-11-12 09:39:43.633 INFO  singlejartest.Main - Filling in-progress candles
+2017-11-12 09:39:44.212 INFO  singlejartest.Main - Executing onStart
+2017-11-12 09:39:44.213 INFO  singlejartest.Main - Running
+2017-11-12 09:39:44.722 INFO  singlejartest.Main - Running, Sat 2017.04.01 00:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:44.799 INFO  singlejartest.Main - Running, Sat 2017.04.01 01:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:44.813 INFO  singlejartest.Main - Running, Sat 2017.04.01 01:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:44.832 INFO  singlejartest.Main - Running, Sat 2017.04.01 02:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:44.841 INFO  singlejartest.Main - Running, Sat 2017.04.01 02:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:44.854 INFO  singlejartest.Main - Running, Sat 2017.04.01 03:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:44.863 INFO  singlejartest.Main - Running, Sat 2017.04.01 03:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:44.877 INFO  singlejartest.Main - Running, Sat 2017.04.01 04:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:44.885 INFO  singlejartest.Main - Running, Sat 2017.04.01 04:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:44.898 INFO  singlejartest.Main - Running, Sat 2017.04.01 05:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:44.906 INFO  singlejartest.Main - Running, Sat 2017.04.01 05:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:44.917 INFO  singlejartest.Main - Running, Sat 2017.04.01 06:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:44.925 INFO  singlejartest.Main - Running, Sat 2017.04.01 06:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:44.939 INFO  singlejartest.Main - Running, Sat 2017.04.01 07:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:44.947 INFO  singlejartest.Main - Running, Sat 2017.04.01 07:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:44.958 INFO  singlejartest.Main - Running, Sat 2017.04.01 08:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:44.965 INFO  singlejartest.Main - Running, Sat 2017.04.01 08:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:44.976 INFO  singlejartest.Main - Running, Sat 2017.04.01 09:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:44.984 INFO  singlejartest.Main - Running, Sat 2017.04.01 09:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:44.996 INFO  singlejartest.Main - Running, Sat 2017.04.01 10:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.004 INFO  singlejartest.Main - Running, Sat 2017.04.01 10:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.015 INFO  singlejartest.Main - Running, Sat 2017.04.01 11:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.022 INFO  singlejartest.Main - Running, Sat 2017.04.01 11:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.032 INFO  singlejartest.Main - Running, Sat 2017.04.01 12:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.039 INFO  singlejartest.Main - Running, Sat 2017.04.01 12:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.048 INFO  singlejartest.Main - Running, Sat 2017.04.01 13:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.055 INFO  singlejartest.Main - Running, Sat 2017.04.01 13:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.066 INFO  singlejartest.Main - Running, Sat 2017.04.01 14:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.072 INFO  singlejartest.Main - Running, Sat 2017.04.01 14:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.083 INFO  singlejartest.Main - Running, Sat 2017.04.01 15:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.089 INFO  singlejartest.Main - Running, Sat 2017.04.01 15:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.098 INFO  singlejartest.Main - Running, Sat 2017.04.01 16:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.112 INFO  singlejartest.Main - Running, Sat 2017.04.01 16:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.120 INFO  singlejartest.Main - Running, Sat 2017.04.01 17:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.126 INFO  singlejartest.Main - Running, Sat 2017.04.01 17:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.134 INFO  singlejartest.Main - Running, Sat 2017.04.01 18:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.140 INFO  singlejartest.Main - Running, Sat 2017.04.01 18:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.148 INFO  singlejartest.Main - Running, Sat 2017.04.01 19:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.154 INFO  singlejartest.Main - Running, Sat 2017.04.01 19:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.162 INFO  singlejartest.Main - Running, Sat 2017.04.01 20:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.168 INFO  singlejartest.Main - Running, Sat 2017.04.01 20:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.176 INFO  singlejartest.Main - Running, Sat 2017.04.01 21:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.181 INFO  singlejartest.Main - Running, Sat 2017.04.01 21:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.188 INFO  singlejartest.Main - Running, Sun 2017.04.01 22:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.193 INFO  singlejartest.Main - Running, Sun 2017.04.01 22:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.201 INFO  singlejartest.Main - Running, Sun 2017.04.01 23:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.205 INFO  singlejartest.Main - Running, Sun 2017.04.01 23:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.213 INFO  singlejartest.Main - Running, Sun 2017.04.02 00:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.220 INFO  singlejartest.Main - Running, Sun 2017.04.02 00:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.229 INFO  singlejartest.Main - Running, Sun 2017.04.02 01:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.234 INFO  singlejartest.Main - Running, Sun 2017.04.02 01:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.241 INFO  singlejartest.Main - Running, Sun 2017.04.02 02:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.246 INFO  singlejartest.Main - Running, Sun 2017.04.02 02:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.257 INFO  singlejartest.Main - Running, Sun 2017.04.02 03:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.263 INFO  singlejartest.Main - Running, Sun 2017.04.02 03:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.273 INFO  singlejartest.Main - Running, Sun 2017.04.02 04:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.280 INFO  singlejartest.Main - Running, Sun 2017.04.02 04:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.288 INFO  singlejartest.Main - Running, Sun 2017.04.02 05:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.292 INFO  singlejartest.Main - Running, Sun 2017.04.02 05:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.302 INFO  singlejartest.Main - Running, Sun 2017.04.02 06:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.307 INFO  singlejartest.Main - Running, Sun 2017.04.02 06:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.315 INFO  singlejartest.Main - Running, Sun 2017.04.02 07:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.319 INFO  singlejartest.Main - Running, Sun 2017.04.02 07:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.326 INFO  singlejartest.Main - Running, Sun 2017.04.02 08:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.330 INFO  singlejartest.Main - Running, Sun 2017.04.02 08:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.336 INFO  singlejartest.Main - Running, Sun 2017.04.02 09:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.340 INFO  singlejartest.Main - Running, Sun 2017.04.02 09:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.347 INFO  singlejartest.Main - Running, Sun 2017.04.02 10:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.351 INFO  singlejartest.Main - Running, Sun 2017.04.02 10:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.361 INFO  singlejartest.Main - Running, Sun 2017.04.02 11:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.366 INFO  singlejartest.Main - Running, Sun 2017.04.02 11:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.375 INFO  singlejartest.Main - Running, Sun 2017.04.02 12:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.380 INFO  singlejartest.Main - Running, Sun 2017.04.02 12:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.388 INFO  singlejartest.Main - Running, Sun 2017.04.02 13:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.392 INFO  singlejartest.Main - Running, Sun 2017.04.02 13:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.403 INFO  singlejartest.Main - Running, Sun 2017.04.02 14:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.406 INFO  singlejartest.Main - Running, Sun 2017.04.02 14:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.418 INFO  singlejartest.Main - Running, Sun 2017.04.02 15:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.421 INFO  singlejartest.Main - Running, Sun 2017.04.02 15:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.426 INFO  singlejartest.Main - Running, Sun 2017.04.02 16:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.429 INFO  singlejartest.Main - Running, Sun 2017.04.02 16:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.433 INFO  singlejartest.Main - Running, Sun 2017.04.02 17:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.436 INFO  singlejartest.Main - Running, Sun 2017.04.02 17:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.441 INFO  singlejartest.Main - Running, Sun 2017.04.02 18:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.443 INFO  singlejartest.Main - Running, Sun 2017.04.02 18:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.448 INFO  singlejartest.Main - Running, Sun 2017.04.02 19:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.450 INFO  singlejartest.Main - Running, Sun 2017.04.02 19:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.455 INFO  singlejartest.Main - Running, Sun 2017.04.02 20:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.457 INFO  singlejartest.Main - Running, Sun 2017.04.02 20:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.462 INFO  singlejartest.Main - Running, Sun 2017.04.02 21:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.511 INFO  singlejartest.Main - Running, Sun 2017.04.02 21:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.552 INFO  singlejartest.Main - Running, Mon 2017.04.02 22:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.641 INFO  singlejartest.Main - Running, Mon 2017.04.02 22:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.703 INFO  singlejartest.Main - Running, Mon 2017.04.02 23:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.779 INFO  singlejartest.Main - Running, Mon 2017.04.02 23:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.883 INFO  singlejartest.Main - Running, Mon 2017.04.03 00:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:45.988 INFO  singlejartest.Main - Running, Mon 2017.04.03 00:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:46.087 INFO  singlejartest.Main - Running, Mon 2017.04.03 01:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:46.152 INFO  singlejartest.Main - Running, Mon 2017.04.03 01:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:46.235 INFO  singlejartest.Main - Running, Mon 2017.04.03 02:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:46.285 INFO  singlejartest.Main - Running, Mon 2017.04.03 02:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:46.336 INFO  singlejartest.Main - Running, Mon 2017.04.03 03:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:46.374 INFO  singlejartest.Main - Running, Mon 2017.04.03 03:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:46.452 INFO  singlejartest.Main - Running, Mon 2017.04.03 04:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:46.496 INFO  singlejartest.Main - Running, Mon 2017.04.03 04:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:46.540 INFO  singlejartest.Main - Running, Mon 2017.04.03 05:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:46.628 INFO  singlejartest.Main - Running, Mon 2017.04.03 05:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:46.676 INFO  singlejartest.Main - Running, Mon 2017.04.03 06:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:46.795 INFO  singlejartest.Main - Running, Mon 2017.04.03 06:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:46.919 INFO  singlejartest.Main - Running, Mon 2017.04.03 07:00 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:47.023 INFO  singlejartest.Main - Running, Mon 2017.04.03 07:30 Eq: 50,000.00 UoL: .00%
+2017-11-12 09:39:47.154 ERROR com.dukascopy.dds2.greed.agent.strategy.tester.TesterCustodian - String index out of range: 17
+java.lang.StringIndexOutOfBoundsException: String index out of range: 17
+	at java.lang.String.substring(String.java:1951)
+	at forex.strategy.services.OnMessageService.printOnMessage(OnMessageService.java:12)
+	at forex.strategy.SMASimpleStrategy.onMessage(SMASimpleStrategy.java:79)
+	at com.dukascopy.dds2.greed.agent.strategy.tester.TesterCustodian.fireOnMessage(TesterCustodian.java:2607)
+	at com.dukascopy.dds2.greed.agent.strategy.tester.TesterCustodian.submitOrderImpl(TesterCustodian.java:803)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.dukascopy.dds2.greed.agent.strategy.tester.TesterCustodian.processUserCommands(TesterCustodian.java:2318)
+	at com.dukascopy.dds2.greed.agent.strategy.tester.TesterCustodian.doMarginCall(TesterCustodian.java:2471)
+	at com.dukascopy.dds2.greed.agent.strategy.tester.TesterCustodian.tryMarginCall(TesterCustodian.java:2350)
+	at com.dukascopy.dds2.greed.agent.strategy.tester.TesterCustodian.doDelayedTasks(TesterCustodian.java:2286)
+	at com.dukascopy.dds2.greed.agent.strategy.tester.StrategyTesterRunner.run(StrategyTesterRunner.java:389)
+	at java.lang.Thread.run(Thread.java:745)
+2017-11-12 09:39:47.157 ERROR com.dukascopy.dds2.greed.agent.strategy.tester.start.DefaultStrategyExceptionHandler - Exception thrown while running onMessage method: String index out of range: 17
+java.lang.StringIndexOutOfBoundsException: String index out of range: 17
+	at java.lang.String.substring(String.java:1951)
+	at forex.strategy.services.OnMessageService.printOnMessage(OnMessageService.java:12)
+	at forex.strategy.SMASimpleStrategy.onMessage(SMASimpleStrategy.java:79)
+	at com.dukascopy.dds2.greed.agent.strategy.tester.TesterCustodian.fireOnMessage(TesterCustodian.java:2607)
+	at com.dukascopy.dds2.greed.agent.strategy.tester.TesterCustodian.submitOrderImpl(TesterCustodian.java:803)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.dukascopy.dds2.greed.agent.strategy.tester.TesterCustodian.processUserCommands(TesterCustodian.java:2318)
+	at com.dukascopy.dds2.greed.agent.strategy.tester.TesterCustodian.doMarginCall(TesterCustodian.java:2471)
+	at com.dukascopy.dds2.greed.agent.strategy.tester.TesterCustodian.tryMarginCall(TesterCustodian.java:2350)
+	at com.dukascopy.dds2.greed.agent.strategy.tester.TesterCustodian.doDelayedTasks(TesterCustodian.java:2286)
+	at com.dukascopy.dds2.greed.agent.strategy.tester.StrategyTesterRunner.run(StrategyTesterRunner.java:389)
+	at java.lang.Thread.run(Thread.java:745)
+2017-11-12 09:39:47.158 ERROR com.dukascopy.dds2.greed.agent.strategy.tester.TesterCustodian - String index out of range: 17
+java.lang.StringIndexOutOfBoundsException: String index out of range: 17
+	at java.lang.String.substring(String.java:1951)
+	at forex.strategy.services.OnMessageService.printOnMessage(OnMessageService.java:12)
+	at forex.strategy.SMASimpleStrategy.onMessage(SMASimpleStrategy.java:79)
+	at com.dukascopy.dds2.greed.agent.strategy.tester.TesterCustodian.fireOnMessage(TesterCustodian.java:2607)
+	at com.dukascopy.dds2.greed.agent.strategy.tester.TesterCustodian.fillOrderConditionally(TesterCustodian.java:1425)
+	at com.dukascopy.dds2.greed.agent.strategy.tester.TesterCustodian.executeConditionally(TesterCustodian.java:836)
+	at com.dukascopy.dds2.greed.agent.strategy.tester.TesterCustodian.doMarginCall(TesterCustodian.java:2473)
+	at com.dukascopy.dds2.greed.agent.strategy.tester.TesterCustodian.tryMarginCall(TesterCustodian.java:2350)
+	at com.dukascopy.dds2.greed.agent.strategy.tester.TesterCustodian.doDelayedTasks(TesterCustodian.java:2286)
+	at com.dukascopy.dds2.greed.agent.strategy.tester.StrategyTesterRunner.run(StrategyTesterRunner.java:389)
+	at java.lang.Thread.run(Thread.java:745)
+2017-11-12 09:39:47.158 ERROR com.dukascopy.dds2.greed.agent.strategy.tester.start.DefaultStrategyExceptionHandler - Exception thrown while running onMessage method: String index out of range: 17
+java.lang.StringIndexOutOfBoundsException: String index out of range: 17
+	at java.lang.String.substring(String.java:1951)
+	at forex.strategy.services.OnMessageService.printOnMessage(OnMessageService.java:12)
+	at forex.strategy.SMASimpleStrategy.onMessage(SMASimpleStrategy.java:79)
+	at com.dukascopy.dds2.greed.agent.strategy.tester.TesterCustodian.fireOnMessage(TesterCustodian.java:2607)
+	at com.dukascopy.dds2.greed.agent.strategy.tester.TesterCustodian.fillOrderConditionally(TesterCustodian.java:1425)
+	at com.dukascopy.dds2.greed.agent.strategy.tester.TesterCustodian.executeConditionally(TesterCustodian.java:836)
+	at com.dukascopy.dds2.greed.agent.strategy.tester.TesterCustodian.doMarginCall(TesterCustodian.java:2473)
+	at com.dukascopy.dds2.greed.agent.strategy.tester.TesterCustodian.tryMarginCall(TesterCustodian.java:2350)
+	at com.dukascopy.dds2.greed.agent.strategy.tester.TesterCustodian.doDelayedTasks(TesterCustodian.java:2286)
+	at com.dukascopy.dds2.greed.agent.strategy.tester.StrategyTesterRunner.run(StrategyTesterRunner.java:389)
+	at java.lang.Thread.run(Thread.java:745)
+2017-11-12 09:39:47.167 INFO  singlejartest.Main - Strategy stopped: 0
