@@ -164,6 +164,12 @@ public class SMASimpleStrategy implements IStrategy {
 		return newamount;
 	}
 
+	/**
+	 * 
+	 * @param orderCmd
+	 * @return
+	 * @throws JFException
+	 */
 	private IOrder submitOrder(OrderCommand orderCmd) throws JFException {
 
 		double stopLossPrice, takeProfitPrice;
