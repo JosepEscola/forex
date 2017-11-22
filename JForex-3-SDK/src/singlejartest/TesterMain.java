@@ -47,7 +47,7 @@ import com.dukascopy.api.system.ISystemListener;
 import com.dukascopy.api.system.ITesterClient;
 import com.dukascopy.api.system.TesterFactory;
 
-import forex.strategy.sto_rc2;
+import forex.strategy.next.MacdSarStrategy;
 
 /**
  * This small program demonstrates how to initialize Dukascopy tester and start
@@ -57,10 +57,10 @@ public class TesterMain {
 	private static final Logger LOGGER = LoggerFactory.getLogger(Main.class);
 
 	private static String jnlpUrl = "http://platform.dukascopy.com/demo/jforex.jnlp";
-	private static String userName = "DEMO2pEUTo";
-	private static String password = "pEUTo";
+	private static String userName = "smasyEU";
+	private static String password = "Deksi555";
 	private static ITesterClient client;
-	private static String reportsFileLocation = "C:\\report.html";
+	private static String reportsFileLocation = "report." + System.currentTimeMillis() + ".html";
 
 	public static void main(String[] args) throws Exception {
 		client = TesterFactory.getDefaultInstance();
@@ -70,15 +70,35 @@ public class TesterMain {
 		subscribeToInstruments();
 		client.setInitialDeposit(Instrument.EURUSD.getPrimaryJFCurrency(), 10000);
 		loadData();
-		setDataInterval("2017/02/01 00:00:00", "2017/10/29 23:00:00");
+		setDataInterval("2017/11/01 00:00:00", "2017/11/20 23:00:00");
 		LOGGER.info("Starting strategy");
 
-		// client.startStrategy(new SMASimpleStrategy(), getLoadingProgressListener());
+		// -- GOOD:
+		// client.startStrategy(new SMASimpleStrategy(),getLoadingProgressListener());
+
+		// -- GOOD: Profit:30
+		client.startStrategy(new MacdSarStrategy(), getLoadingProgressListener());
+
+		// ---------------------------
+
+		// client.startStrategy(new SmaFibStrategyAIO(), getLoadingProgressListener());
+
+		// client.startStrategy(new MaSarStrategy(), getLoadingProgressListener());
+
+		// NO Chuta -- client.startStrategy(new MacdSmaSarStrategy(),
+		// getLoadingProgressListener());
+
+		// client.startStrategy(new PyramidStrategy(), getLoadingProgressListener());
+		// client.startStrategy(new GoldenRainOct17(), getLoadingProgressListener());
+
 		// client.startStrategy(new RsiCciStrategy(), getLoadingProgressListener());
 		// client.startStrategy(new GridsMartingaleAndHedging(),
 		// getLoadingProgressListener());
+		// client.startStrategy(new sto_rc2(), getLoadingProgressListener());
+		// client.startStrategy(new FibonacciTesting(), getLoadingProgressListener());
 
-		client.startStrategy(new sto_rc2(), getLoadingProgressListener());
+		// client.startStrategy(new GridsMartingaleAndHedging(),
+		// getLoadingProgressListener());
 	}
 
 	private static void setDataInterval(String dateFrom, String dateTo) throws ParseException {
@@ -149,6 +169,7 @@ public class TesterMain {
 		Set<Instrument> instruments = new HashSet<>();
 		instruments.add(Instrument.EURUSD);
 		instruments.add(Instrument.GBPJPY);
+		// instruments.add(Instrument.AUDNZD);
 		LOGGER.info("Subscribing instruments...");
 		client.setSubscribedInstruments(instruments);
 	}

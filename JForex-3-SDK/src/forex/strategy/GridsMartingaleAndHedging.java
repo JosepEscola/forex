@@ -75,7 +75,7 @@ public class GridsMartingaleAndHedging implements IStrategy, IPriceAggregationBa
 	public int takeTotalProfitPips = 40;
 
 	@Configurable("Instrument")
-	public Instrument instrument = Instrument.EURUSD;
+	public Instrument instrument = Instrument.GBPJPY;
 
 	@Configurable("Offer side")
 	public OfferSide offerSide = OfferSide.BID;

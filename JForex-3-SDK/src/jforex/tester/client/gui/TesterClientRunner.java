@@ -61,7 +61,7 @@ class TesterClientRunner {
 
 		client.setSystemListener(systemListener);
 		tryToConnect(jnlpUrl, userName, password);
-		setDataInterval("2017/04/01 00:00:00", "2017/06/29 23:00:00");
+		setDataInterval("2017/10/01 00:00:00", "2017/10/29 23:00:00");
 		subscribeInstrument(instrument);
 		downloadDataAndWaitForResult();
 
@@ -118,6 +118,7 @@ class TesterClientRunner {
 	private void subscribeInstrument(Instrument instrument) {
 		final Set<Instrument> instruments = new HashSet<>();
 		instruments.add(instrument);
+		instruments.add(Instrument.EURUSD);
 
 		LOGGER.info("Subscribing instruments...");
 		client.setSubscribedInstruments(instruments);

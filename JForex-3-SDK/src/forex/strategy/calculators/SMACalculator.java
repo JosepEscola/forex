@@ -4,8 +4,10 @@ import com.dukascopy.api.IBar;
 import com.dukascopy.api.IHistory;
 import com.dukascopy.api.IIndicators;
 import com.dukascopy.api.IIndicators.AppliedPrice;
+import com.dukascopy.api.Instrument;
 import com.dukascopy.api.JFException;
 import com.dukascopy.api.OfferSide;
+import com.dukascopy.api.Period;
 import com.dukascopy.api.feed.IFeedDescriptor;
 import com.dukascopy.api.indicators.IIndicatorCalculator;
 
@@ -29,7 +31,7 @@ public final class SMACalculator {
 		// 1);
 		// double sma = calculateSMA(history, feedDescriptor, indicators);
 
-		int candlesBefore = 1;
+		int candlesBefore = 2;
 		int candlesAfter = 0;
 
 		// ITimedData feedData = history.getFeedData(feedDescriptor, 0);
@@ -64,6 +66,32 @@ public final class SMACalculator {
 		// TODO: AND [Daily SMA(20,Daily Volume) > 40000]
 		// TODO: AND [Daily SMA(60,Daily Close) > 10]
 
+		return false;
+	}
+
+	public static boolean isSMACrossBuyNoFeed(IIndicators indicators, Instrument instrument, Period period,
+			OfferSide offerSide) throws JFException {
+
+		int candlesBefore = 2;
+
+		double sma10 = indicators.sma(instrument, period, offerSide, AppliedPrice.CLOSE, 10, candlesBefore);
+		double sma20 = indicators.sma(instrument, period, offerSide, AppliedPrice.CLOSE, 20, candlesBefore);
+		double sma50 = indicators.sma(instrument, period, offerSide, AppliedPrice.CLOSE, 50, candlesBefore);
+		double sma100 = indicators.sma(instrument, period, offerSide, AppliedPrice.CLOSE, 100, candlesBefore);
+		double sma200 = indicators.sma(instrument, period, offerSide, AppliedPrice.CLOSE, 200, candlesBefore);
+
+		if ((sma10 > sma20) && (sma20 > sma50) && (sma50 > sma100) && (sma100 > sma200)) {
+			// OK
+			return true;
+		}
+
+		/**
+		 * In uptrend, SMAs with shorter time periods must be running above SMAs with
+		 * longer time periods.
+		 */
+		// TODO: AND [Daily SMA(20,Daily Volume) > 40000]
+		// TODO: AND [Daily SMA(60,Daily Close) > 10]
+
 		// SMA crossed previous green candle
 		// if (prevBar.getOpen() < sma && prevBar.getClose() > sma) {
 		// System.err.println("SMAAA IN --> BUY");
@@ -82,7 +110,7 @@ public final class SMACalculator {
 		// 1);
 		// double sma = calculateSMA(history, feedDescriptor, indicators);
 
-		int candlesBefore = 1;
+		int candlesBefore = 2;
 		int candlesAfter = 0;
 
 		// ITimedData feedData = history.getFeedData(feedDescriptor, 0);
@@ -108,11 +136,10 @@ public final class SMACalculator {
 		if ((sma10[0] < sma20[0]) && (sma20[0] < sma50[0]) && (sma50[0] < sma100[0]) && (sma100[0] < sma200[0])) {
 			// OK
 			return true;
-		}
-		/**
-		 * In downtrend, SMAs with shorter time periods must be running below SMAs with
-		 * longer time periods
-		 */
+		} /**
+			 * In downtrend, SMAs with shorter time periods must be running below SMAs with
+			 * longer time periods
+			 */
 		// SMA crossed previous green candle
 		// if (prevBar.getOpen() < sma && prevBar.getClose() > sma) {
 		// System.err.println("SMAAA IN --> BUY");
@@ -126,6 +153,21 @@ public final class SMACalculator {
 		// return true;
 		// }
 		return false;
+	}
+
+	public static boolean isSMACrossSellNoFeed(IIndicators indicators, Instrument instrument, Period period,
+			OfferSide offerSide) throws JFException {
+
+		int candlesBefore = 2;
+		int candlesAfter = 0;
+
+		double sma10 = indicators.sma(instrument, period, offerSide, AppliedPrice.CLOSE, 10, candlesBefore);
+		double sma20 = indicators.sma(instrument, period, offerSide, AppliedPrice.CLOSE, 20, candlesBefore);
+		double sma50 = indicators.sma(instrument, period, offerSide, AppliedPrice.CLOSE, 50, candlesBefore);
+		double sma100 = indicators.sma(instrument, period, offerSide, AppliedPrice.CLOSE, 100, candlesBefore);
+		double sma200 = indicators.sma(instrument, period, offerSide, AppliedPrice.CLOSE, 200, candlesBefore);
+
+		return ((sma10 < sma20) && (sma20 < sma50) && (sma50 < sma100) && (sma100 < sma200));
 	}
 
 	/**
@@ -143,7 +185,7 @@ public final class SMACalculator {
 			final IIndicators indicators) throws JFException {
 
 		// int smaTimePeriod = 50;
-		int candlesBefore = 1;
+		int candlesBefore = 2;
 		int candlesAfter = 0;
 
 		// ITimedData feedData = history.getFeedData(feedDescriptor, 0);

@@ -37,7 +37,7 @@ import org.slf4j.LoggerFactory;
 import com.dukascopy.api.Instrument;
 import com.dukascopy.api.system.ISystemListener;
 
-import forex.strategy.SMASimpleStrategy;
+import forex.strategy.SmaFibStrategyAIO;
 
 /**
  * This small program demonstrates how to initialize Dukascopy tester and start
@@ -50,8 +50,8 @@ public class TesterMainGUIMode {
 	private static String jnlpUrl = "http://platform.dukascopy.com/demo/jforex.jnlp";
 	private static String userName = "DEMO2pEUTo";
 	private static String password = "pEUTo";
-	private static String reportFileName = "/Users/DKS/Desktopreport.html";
-	private static Instrument instrument = Instrument.DAIDEEUR;
+	private static String reportFileName = "/Users/DKS/Desktop/report.html";
+	private static Instrument instrument = Instrument.EURUSD;
 
 	private static MyTesterWindow myTesterWindow;
 	private static TesterClientRunner testerClientRunner;
@@ -67,7 +67,7 @@ public class TesterMainGUIMode {
 			public void run() {
 				try {
 					testerClientRunner.start(jnlpUrl, userName, password, instrument, myTesterWindow, myTesterWindow,
-							getsystemListener(), new SMASimpleStrategy());
+							getsystemListener(), new SmaFibStrategyAIO());
 
 				} catch (Exception e2) {
 					LOGGER.error(e2.getMessage(), e2);

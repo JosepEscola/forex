@@ -24,9 +24,12 @@ public class OnMessageService {
 			case ORDER_CHANGED_OK:
 				break;
 			case ORDER_SUBMIT_OK:
+				break;
 			case ORDER_CLOSE_OK:
-				console.getErr().println(orderLabel + " <INFO> " + messageType + ": "
-						+ message.getOrder().getProfitLossInAccountCurrency() + "$");
+				console.getErr()
+						.println(orderLabel + " : " + message.getOrder().getOrderCommand().toString() + " : "
+								+ messageType + ": " + "Pips: " + message.getOrder().getProfitLossInPips() + " - $$$: "
+								+ message.getOrder().getProfitLossInAccountCurrency() + "$");
 				break;
 			case ORDERS_MERGE_OK:
 				console.getInfo().println(orderLabel + " " + messageType);
@@ -38,8 +41,14 @@ public class OnMessageService {
 			case ORDER_CLOSE_REJECTED:
 			case ORDER_FILL_REJECTED:
 			case ORDER_SUBMIT_REJECTED:
-			case ORDERS_MERGE_REJECTED:
-				console.getWarn().println(orderLabel + " " + messageType);
+			case ORDERS_MERGE_REJECTED: {
+				console.getWarn().println(orderLabel + " " + messageType + " - size:" + message.getReasons().size()
+						+ " - cont:" + message.getContent());
+
+				message.getReasons().forEach((reason) -> {
+					console.getWarn().println("Reason:" + reason.toString());
+				});
+			}
 				break;
 			default:
 				console.getErr().println(orderLabel + " *" + messageType + "* " + message.getContent());
